@@ -38,7 +38,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-          <main className="pb-8 min-h-screen bg-orange-50 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-300 break-words leading-6 transition-colors duration-500">
+          <main className="pb-8 min-h-screen bg-background text-foreground break-words leading-6 transition-colors duration-500">
             <Header />
             <div className="px-5 pt-14 mx-auto max-w-3xl">
               {children}
