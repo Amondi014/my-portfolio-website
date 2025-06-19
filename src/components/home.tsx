@@ -6,12 +6,12 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import SectionHeading from './sectionHeading';
 import Skills from './skills';
-// import Projects from '@/components/Projects';
-// import ShadowBlock from '@/components/ShadowBlock';
-// import ProjectsHeading from '@/components/ProjectsHeading';
-// import Contact from '@/components/Contact';
+// import Projects from '../components/projects/project';
+import ShadowBlock from '../components/shadowBlock'
+import ProjectsHeading from '../components/projectsHeading';
+import Contact from '../components/contact/index';
 import Article from './article';
-// import StickyNav from './chat/sticky-nav';
+import StickyNav from './chat/sticky-nav';
 
 const Home = () => {
   const variants = {
@@ -33,19 +33,19 @@ const Home = () => {
 
   return (
     <Article>
-      {/* <StickyNav /> */}
+      <StickyNav />
       <div className="flex flex-col items-center md:flex-row my-8 md:my-14" id="header">
         <div className="self-start text-zinc-900 dark:text-zinc-100 transition duration-500 ease-in-out">
           <h2 className="text-3xl  font-semibold font-mplus">
-            Sidney Kaguli
+            Edith Amondi
           </h2>
-          <p> Digital Craftsman ( Designer / Developer ) </p>
+          <p> Digital Nomad; Software Developper; Blogger; Life-Long-Learner </p>
         </div>
-        <div className="mt-4 md:mt-0 md:ml-6">
-          <div className="border-teal-900/40 border-2 rounded-full w-24 h-24 inline-block overflow-hidden">
+        <div className=" flex flex-col ml-auto mt-4 md:mt-0 md:ml-6  ">
+          <div className="border-teal-900/40 border-2 rounded-full w-24 h-24  inline-block overflow-hidden">
             <Image
               src="/me.jpg"
-              alt="Sidney Kaguli"
+              alt="Edith Amondi"
               width={100}
               height={100}
             />
@@ -54,20 +54,16 @@ const Home = () => {
 
       </div>
       <section className="mt-6">
-        <SectionHeading>Work</SectionHeading>
+        <SectionHeading>Introduction</SectionHeading>
         <p className="mb-6 dark:text-zinc-100 text-zinc-900 transition duration-500 ease-in-out">
-          &nbsp;&nbsp;&nbsp;I am a full-stack developer from Nairobi, Kenya
-          with a passion for building digital services. I have a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. With me on your team, you can be sure
-          that your product will be built with the best practices in mind and delivered on time.
+          &nbsp;&nbsp;&nbsp;I approach development the way I approach a good story—with intention, structure, and an eye for meaning. I care about clean, functional code, but I also care about how it feels to use what I build. Every product is a narrative: it has a purpose, a flow, and a user at its center. I'm drawn to thoughtful design, human-centered solutions, and the quiet elegance of things that just work.
         </p>
       </section>
       <section className="mt-6" id="works">
         <SectionHeading>Skills</SectionHeading>
         <Skills />
       </section>
-      {/* <section className="mt-8">
+       {/* <section className="mt-8">
         <ProjectsHeading />
         <Projects />
       </section>
@@ -80,7 +76,7 @@ const Home = () => {
         variants={variants}
         transition={{ duration: 0.7, type: 'ease' }}
       >
-        <div className="relative mb-3">
+         <div className="relative mb-3">
           <SectionHeading overlay className="text-5xl md:text-8xl text-center">Contact</SectionHeading>
           <ShadowBlock />
         </div>
@@ -94,7 +90,7 @@ const Home = () => {
           </p>
           <Contact />
         </div>
-      </motion.section> */}
+      </motion.section>  */}
     </Article>
   );
 };

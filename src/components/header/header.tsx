@@ -10,53 +10,50 @@ import DropdownMenu from './dropdownmenu';
 const Header = () => (
   <header className="fixed w-full py-2 px-5 z-[100] md:p-4 backdrop-blur-md dark:text-zinc-50">
     <div className="mx-auto max-w-5xl">
-      <nav className="flex items-center gap-5 text-base">
-        <ScrollLink to="header" spy smooth offset={-200}>
-          <button type="button" className="font-semibold">
-            Edith Amondi
-          </button>
-        </ScrollLink>
-        <div className="items-center gap-6 hidden md:flex">
-          <ScrollLink to="works" spy smooth>
-            <button type="button" className="hover:underline underline-offset-4">
-              Works
-            </button>
-          </ScrollLink>
-          <ScrollLink to="contact" spy smooth>
-            <button type="button" className="hover:underline underline-offset-4">
-              Contact
-            </button>
-          </ScrollLink>
-          <Link
-            href="https://docs.google.com/document/d/1Fg2qQOS2DUQ9nt2wWuEzuwG4JHrVEiY85zPv2G2S0nA/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline underline-offset-4"
-          >
-            Resume
-          </Link>
-          <Link
-            href="https://github.com/XsidX/sid-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2"
-          >
+      <nav className="flex items-center text-base relative">
+        {/* Left/center content */}
+        <div className="flex items-center gap-5">
+          <ScrollLink to="header" spy smooth offset={-200}>
            
-            <Github className="w-4 h-4" />
-            <span className="hover:underline underline-offset-4">Source</span>
-          </Link>
+          </ScrollLink>
+          <div className="items-center gap-6 hidden md:flex">
+             <ScrollLink to="achievements" spy smooth>
+              <button type="button" className="hover:underline underline-offset-4">
+               Projects
+              </button>  
+            </ScrollLink>
+            
+             <ScrollLink to="blog" spy smooth>
+              <button type="button" className="hover:underline underline-offset-4">
+                Blog
+              </button>  
+            </ScrollLink>
+            
+             <ScrollLink to="achievements" spy smooth>
+              <button type="button" className="hover:underline underline-offset-4">
+                Achievements
+              </button>  
+            </ScrollLink>
+        
+            <Link
+              href="https://github.com/XsidX/sid-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <Github className="w-4 h-4" />
+              <span className="hover:underline underline-offset-4">Source</span>
+            </Link>
+          </div>
+          <DropdownMenu
+            tags={['About', 'Contact', 'Projects', 'Resume', 'View Source']}
+          />
         </div>
-        <div className="flex-1" />
-        <ThemeToggle />
-        <DropdownMenu
-          tags={[
-            'About',
-            'Contact',
-            'Projects',
-            'Resume',
-            'View Source',
-          ]}
-        />
+
+        {/* Only the ThemeToggle goes here and is pushed far right */}
+        <div className="ml-auto">
+          <ThemeToggle />
+        </div>
       </nav>
     </div>
   </header>

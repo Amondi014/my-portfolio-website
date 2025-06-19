@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Header from "../components/header/header";
 
 import { ThemeProvider } from "./themeProvider"
+import {Toaster} from '../components/ui/sonner'
 
 
 const geistSans = Geist({
@@ -38,9 +39,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-          <main className="pb-8 min-h-screen bg-background text-foreground break-words leading-6 transition-colors duration-500">
+          <main className="pb-8 min-h-screen bg-background text-foreground break-words leading-6 transition-colors duration-500 justify-center">
             <Header />
-            <div className="px-5 pt-14 mx-auto max-w-3xl">
+            <Toaster/>
+            <div className="px-5 pt-14 mx-auto max-w-3xl justify-center">
+               
               {children}
             </div>
             <Footer />
