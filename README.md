@@ -1,3 +1,16 @@
+🧠 Edith Amondi – Portfolio Website
+This is my personal portfolio built with Next.js, designed to showcase my projects, technical skills, and creative work. It features:
+
+✅ Clean and responsive layout
+
+🎨 Global CSS for consistent theming
+
+🧩 Modular components for scalability
+
+🧠 Space for projects, writing, and more
+
+Built with love, curiosity, and the goal of blending tech with storytelling.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
