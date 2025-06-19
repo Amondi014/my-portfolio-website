@@ -2,22 +2,22 @@ import Home from "../components/home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sidney Kaguli | Portfolio",
+  title: "Edith Amondi | Portfolio",
   description: "Full-stack web developer with a focus on remote work",
   keywords: ["web development", "full-stack", "remote work", "portfolio"],
-  authors: [{ name: "Sidney Kaguli", url: "https://sidneykaguli.com" }],
+  authors: [{ name: "Edith Amondi", url: "https://edithamondi.com" }],
   openGraph: {
-    title: "Sidney Kaguli | Portfolio",
+    title: "Edith Amondi| Portfolio",
     description: "Full-stack web developer with a focus on remote work",
     type: "website",
-    siteName: "Sidney Kaguli | Portfolio",
+    siteName: "Edith Amondi | Portfolio",
     images: [
       {
         url: "https://pbs.twimg.com/profile_images/1545149127054475269/Y5LEA7cQ_400x400.jpg",
         // image hosted on random domain/vercelblob - storage container for information 
         width: 800,
         height: 600,
-        alt: "Sidney Kaguli | Portfolio",
+        alt: "Edith Amondi | Portfolio",
       },
     ],
   },
