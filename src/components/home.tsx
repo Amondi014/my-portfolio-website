@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import SectionHeading from './sectionHeading';
 import Skills from './skills';
-// import Projects from '../components/projects/project';
+import Projects from '../components/projects/project';
 import ShadowBlock from '../components/shadowBlock'
 import ProjectsHeading from '../components/projectsHeading';
 import Contact from '../components/contact/index';
@@ -63,7 +63,7 @@ const Home = () => {
         <SectionHeading>Skills</SectionHeading>
         <Skills />
       </section>
-       {/* <section className="mt-8">
+       <section className="mt-8">
         <ProjectsHeading />
         <Projects />
       </section>
@@ -90,7 +90,7 @@ const Home = () => {
           </p>
           <Contact />
         </div>
-      </motion.section>  */}
+      </motion.section> 
     </Article>
   );
 };

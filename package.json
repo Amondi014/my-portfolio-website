@@ -53,6 +53,7 @@
     "@tailwindcss/postcss": "^4",
     "@types/axios": "^0.14.4",
     "@types/node": "^20",
+    "@types/prop-types": "^15.7.15",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-scroll": "^1.8.10",
